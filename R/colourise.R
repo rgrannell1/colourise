@@ -4,6 +4,7 @@ colourise <- local({
 	# be colourised.
 
 	# partly adapted from Hadley Wickham's colourising code in testthat.
+
 	supports_colour <- function () {
 		# is a terminal colourisable?
 
