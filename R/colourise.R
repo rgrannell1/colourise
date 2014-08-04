@@ -1,4 +1,13 @@
 
+#' colourise
+#'
+#'
+#'
+#'
+#'
+#'
+#'
+
 colourise <- local({
 	# functions that add ANSI colour codes to strings, allowing them to
 	# be colourised.

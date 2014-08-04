@@ -1,0 +1,30 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+signitures
+scratchpad.R
+
+gpl3.png
+example-code.png
+
+types.md
+
+# REMOVE ME REMOVE ME REMOVE ME REMOVE ME
+inst/vignettes/kea.Rnw
+
+# BitTorrent Sync
+
+.!sync
+.SyncArchive/
+.SyncTrash/
+.SyncID
+.SyncIgnore
+.SyncPart
+.SyncTemp
+
+.Rhistory
+.gitignore
+.Rproj.user
+
+.git
+.travis.yml
+.babelignore

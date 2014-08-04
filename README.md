@@ -10,7 +10,7 @@ Colourise colours strings printed by R.
 
 ### Usage
 
-```
+```R
 cat(colourise $ red('this is a string!'), \n)
 ```
 
