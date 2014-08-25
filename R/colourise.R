@@ -40,43 +40,37 @@ colouriser <- function (code) {
 	}
 }
 
-#' colouriseBlack
+#' colourise
 #'
-#' colour a string black.
+#' add colour to a string.
 #'
-#' @param message a character vector. The string to colour.
+#' @param message. An arbitrary string.
+#'
+#' @return a string.
+#'
+#'
+#' @rdname colourise
+#' @export
 
-colouriseBlack  <- colouriser("0;30m")
+colouriseBlack  <- colouriser("")
 
-#' colouriseBlue
-#'
-#' colour a string blue.
-#'
-#' @param message a character vector. The string to colour.
+#' @rdname colourise
+#' @export
 
 colouriseBlue   <- colouriser("0;34m")
 
-#' colouriseGreen
-#'
-#' colour a string green.
-#'
-#' @param message a character vector. The string to colour.
+#' @rdname colourise
+#' @export
 
 colouriseGreen  <- colouriser("0;32m")
 
-#' colouriseYellow
-#'
-#' colour a string yellow.
-#'
-#' @param message a character vector. The string to colour.
+#' @rdname colourise
+#' @export
 
 colouriseYellow <- colouriser("1;33m")
 
-#' colouriseRed
-#'
-#' colour a string red.
-#'
-#' @param message a character vector. The string to colour.
+#' @rdname colourise
+#' @export
 
 colouriseRed    <- colouriser("0;31m")
 
@@ -84,8 +78,27 @@ colouriseRed    <- colouriser("0;31m")
 
 
 
-colouriseBlack  <- colourizeBlack
-colouriseBlue   <- colourizeBlue
-colouriseGreen  <- colourizeGreen
-colouriseYellow <- colourizeYellow
-colouriseRed    <- colourizeRed
+#' @rdname colourise
+#' @export
+
+colourizeBlack  <- colouriseBlack
+
+#' @rdname colourise
+#' @export
+
+colourizeBlue   <- colouriseBlue
+
+#' @rdname colourise
+#' @export
+
+colourizeGreen  <- colouriseGreen
+
+#' @rdname colourise
+#' @export
+
+colourizeYellow <- colouriseYellow
+
+#' @rdname colourise
+#' @export
+
+colourizeRed    <- colouriseRed

@@ -11,5 +11,3 @@ Maintainer: Ryan Grannell <r.grannell2@gmail.com>
 ByteCompile: yes
 License: GPL-3
 Roxygen: list(wrap = FALSE)
-Collate:
-	colourise.R
