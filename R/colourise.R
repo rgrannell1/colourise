@@ -46,7 +46,7 @@ colouriser <- function (code) {
 #'
 #' @param message a character vector. The string to colour.
 
-colouriseBlack  <- colouriser("1;33m")
+colouriseBlack  <- colouriser("0;30m")
 
 #' colouriseBlue
 #'
@@ -54,7 +54,7 @@ colouriseBlack  <- colouriser("1;33m")
 #'
 #' @param message a character vector. The string to colour.
 
-colouriseBlue   <- colouriser("1;33m")
+colouriseBlue   <- colouriser("0;34m")
 
 #' colouriseGreen
 #'
@@ -62,7 +62,7 @@ colouriseBlue   <- colouriser("1;33m")
 #'
 #' @param message a character vector. The string to colour.
 
-colouriseGreen  <- colouriser("1;33m")
+colouriseGreen  <- colouriser("0;32m")
 
 #' colouriseYellow
 #'
