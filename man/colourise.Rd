@@ -6,19 +6,19 @@
 \format{\preformatted{List of 5
  $ black :function (message)  
   ..- attr(*, "srcref")=Class 'srcref'  atomic [1:8] 41 3 47 3 17 17 41 47
-  .. .. ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x26166f8> 
+  .. .. ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x29dfce8> 
  $ blue  :function (message)  
   ..- attr(*, "srcref")=Class 'srcref'  atomic [1:8] 41 3 47 3 17 17 41 47
-  .. .. ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x26166f8> 
+  .. .. ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x29dfce8> 
  $ green :function (message)  
   ..- attr(*, "srcref")=Class 'srcref'  atomic [1:8] 41 3 47 3 17 17 41 47
-  .. .. ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x26166f8> 
+  .. .. ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x29dfce8> 
  $ red   :function (message)  
   ..- attr(*, "srcref")=Class 'srcref'  atomic [1:8] 41 3 47 3 17 17 41 47
-  .. .. ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x26166f8> 
+  .. .. ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x29dfce8> 
  $ yellow:function (message)  
   ..- attr(*, "srcref")=Class 'srcref'  atomic [1:8] 41 3 47 3 17 17 41 47
-  .. .. ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x26166f8> 
+  .. .. ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x29dfce8> 
 }}
 \usage{
 colourise

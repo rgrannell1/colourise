@@ -1,7 +1,7 @@
 colourise v0.1.0
 =========
 
-Colourise colours strings printed by R.
+Add colour to R's output.
 
 ### Examples
 

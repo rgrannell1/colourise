@@ -1,13 +1,4 @@
 
-#' colourise
-#'
-#'
-#'
-#'
-#'
-#'
-#'
-
 colourise <- local({
 	# functions that add ANSI colour codes to strings, allowing them to
 	# be colourised.
@@ -37,28 +28,64 @@ colourise <- local({
 
 	}
 
-	colouriser <- function (code) {
-		function (message) {
-			if (supports_colour()) {
-				"\033[" %+% code %+% message %+% "\033[0m"
-			} else {
-				message
-			}
-		}
-	}
-
-	list(
-		black =
-			colouriser("0;30m"),
-		blue =
-			colouriser("0;34m"),
-		green =
-			colouriser("0;32m"),
-		red =
-			colouriser("0;31m"),
-		yellow =
-			colouriser("1;33m")
-	)
 })
 
-colourize <- colourise
+colouriser <- function (code) {
+	function (message) {
+		if (supports_colour()) {
+			"\033[" %+% code %+% message %+% "\033[0m"
+		} else {
+			message
+		}
+	}
+}
+
+#' colouriseBlack
+#'
+#' colour a string black.
+#'
+#' @param message a character vector. The string to colour.
+
+colouriseBlack  <- colouriser("1;33m")
+
+#' colouriseBlue
+#'
+#' colour a string blue.
+#'
+#' @param message a character vector. The string to colour.
+
+colouriseBlue   <- colouriser("1;33m")
+
+#' colouriseGreen
+#'
+#' colour a string green.
+#'
+#' @param message a character vector. The string to colour.
+
+colouriseGreen  <- colouriser("1;33m")
+
+#' colouriseYellow
+#'
+#' colour a string yellow.
+#'
+#' @param message a character vector. The string to colour.
+
+colouriseYellow <- colouriser("1;33m")
+
+#' colouriseRed
+#'
+#' colour a string red.
+#'
+#' @param message a character vector. The string to colour.
+
+colouriseRed    <- colouriser("0;31m")
+
+
+
+
+
+colouriseBlack  <- colourizeBlack
+colouriseBlue   <- colourizeBlue
+colouriseGreen  <- colourizeGreen
+colouriseYellow <- colourizeYellow
+colouriseRed    <- colourizeRed
