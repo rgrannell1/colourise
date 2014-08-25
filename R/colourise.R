@@ -1,34 +1,29 @@
 
-colourise <- local({
-	# functions that add ANSI colour codes to strings, allowing them to
-	# be colourised.
+# Partly Adapted from Hadley Wickham's code in testthat.
+#
 
-	# partly adapted from Hadley Wickham's colourising code in testthat.
+supports_colour <- function () {
+	# is a terminal colourisable?
 
-	supports_colour <- function () {
-		# is a terminal colourisable?
+	env_vars <- Sys.getenv()
 
-		env_vars <- Sys.getenv()
+	TERM      <- env_vars["TERM"]
+	COLORTERM <- env_vars["COLORTERM"]
 
-		TERM      <- env_vars["TERM"]
-		COLORTERM <- env_vars["COLORTERM"]
+	set_env_vars <- names(env_vars)
 
-		set_env_vars <- names(env_vars)
+	# -- term support color.
+	matching_TERM <-
+		("TERM" %in% set_env_vars) && !is_na(TERM) && TERM %in%
+		c("screen", "screen-256color", "xterm-color", "xterm-256color")
 
-		# -- term support color.
-		matching_TERM <-
-			("TERM" %in% set_env_vars) && !is_na(TERM) && TERM %in%
-			c("screen", "screen-256color", "xterm-color", "xterm-256color")
+	# -- colorterm is set at all. This is required for gnome-terminal.
+	matching_COLORTERM <-
+		("COLORTERM" %in% set_env_vars) && !is_na(COLORTERM)
 
-		# -- colorterm is set at all. This is required for gnome-terminal.
-		matching_COLORTERM <-
-			("COLORTERM" %in% set_env_vars) && !is_na(COLORTERM)
+	isTRUE(matching_TERM || matching_COLORTERM)
 
-		isTRUE(matching_TERM || matching_COLORTERM)
-
-	}
-
-})
+}
 
 colouriser <- function (code) {
 	function (message) {
@@ -48,11 +43,10 @@ colouriser <- function (code) {
 #'
 #' @return a string.
 #'
-#'
 #' @rdname colourise
 #' @export
 
-colouriseBlack  <- colouriser("")
+colouriseBlack  <- colouriser("0;30m")
 
 #' @rdname colourise
 #' @export
